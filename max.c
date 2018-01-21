@@ -1,21 +1,20 @@
 #include <stdio.h>
 
 int main(void) {
-	int n,a,b,c;
-	scanf("%d\n",&n);
-	scanf("%d %d %d",&a,&b,&c);
-	if(a>b&&a>c)
+	int a[50],N,i,max;
+	scanf("%d\n",&N);
+	for(i=0;i<N;++i)
 	{
-		printf("%d",a);
+	scanf("%d ",&a[i]);
 	}
-	else if(b>a&&b>c)
-	   {
-		printf("%d",b);
-	   }
-           
-           	else
+	max=a[0];
+	for(i=1;i<N;++i)
 	{
-		printf("%d",c);
+		if(max<a[i])
+		{
+			max=a[i];
+		}
 	}
+	printf("%d",max);
 	return 0;
 }
