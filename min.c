@@ -1,21 +1,20 @@
 #include <stdio.h>
 
 int main(void) {
-	int n,a,b,c;
-	scanf("%d\n",&n);
-	scanf("%d %d %d",&a,&b,&c);
-	if(a<b&&a<c)
+	int a[50],N,i,min;
+	scanf("%d\n",&N);
+	for(i=0;i<N;++i)
 	{
-		printf("%d",a);
+	scanf("%d ",&a[i]);
 	}
-	else if(b<a&&b<c)
-	   {
-		printf("%d",b);
-	   }
-           
-           	else
+	min=a[0];
+	for(i=1;i<N;++i)
 	{
-		printf("%d",c);
+		if(min>a[i])
+		{
+			min=a[i];
+		}
 	}
+	printf("%d",min);
 	return 0;
 }
