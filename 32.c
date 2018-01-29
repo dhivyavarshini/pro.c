@@ -2,13 +2,13 @@
 #include<string.h>
 
 int main(void) {
-	char a[100]="hello hai";
-	 int i,count=0;
+	char a[150]="hello world";
+	 int i,c=0;
 	for(i=0;a[i]!='\0';i++)
 	{
 		if(a[i]==' ')
-			count++;
+			c++;
 	}
-	printf("no. of words are %d",count+1);
+	printf("no. of words are %d",c+1);
 	return 0;
 }
