@@ -2,12 +2,12 @@
 #include<conio.h>
 void main()
 {
-int b;
+int n;
 printf("enter the number");
-scan("%d",&b);
-while((b%10)!=0)
+scan("%d",&n);
+while((%10)!=0)
 {
-b++;
+n++;
 }
-printf("the multiple nearest is %d",b);
+printf("the multiple nearest is %d",n);
 }
