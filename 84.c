@@ -3,9 +3,9 @@ int main(void)
 
 {
 char ch;
-int n;
+int a;
 scanf("%c",&ch);
-n=(int*)ch;
-printf("%d",n);
+a=(int*)ch;
+printf("%d",a);
 	return 0;
 }
