@@ -1,25 +1,33 @@
 #include <stdio.h>
-
-int main(void) {
-	int a[50],N,i,j,temp;
-	scanf("%d",&N);
-	for(i=0;i<N;++i)
-	{
-		scanf("%d ",&a[i]);
-		
-	}
-	for(i=0;i<N;++i)
-	{
-		for(j=0;j<N-i-1;++j)
-		{
-			temp=a[j];
-			a[j]=a[j+1];
-			a[j+1]=temp;
-		}
-	}
-	for(i=0;i<N;i++)
-	{
-		printf("%d ",a[i]);
-	}
+int main()
+{
+    int arr[60];
+    int size;
+    int i, j, temp;
+    printf("Enter size of array: ");
+    scanf("%d\n", &size);
+    
+    for(i=0; i<size; i++)
+    {
+        scanf("%d ", &arr[i]);
+    }
+    for(i=0; i<size; i++)
+    {
+        for(j=i+1; j<size; j++)
+        {
+            if(arr[i] > arr[j])
+            {
+                temp= arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+    
+    for(i=0; i<size; i++)
+    {
+        printf("%d ", arr[i]);
+        
+    }
 	return 0;
 }
