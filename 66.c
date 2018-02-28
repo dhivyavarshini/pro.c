@@ -10,7 +10,7 @@ int main()
 			count++;
 		}
 	}
-	if(count==2)
+	if(count!=0)
 	{
 		printf("prime");
 	}
